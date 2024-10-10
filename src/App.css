@@ -1,0 +1,42 @@
+.center{
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0%);
+  flex-direction: column;
+}
+
+img{
+  margin: 20px;
+}
+
+body{
+  margin: 0;
+  color: white;
+}
+
+.gradient-background {
+  background: linear-gradient(300deg,#FF506F,#8B5C9F,#000);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  transform: scaleZ(10);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+  }
+
+  @keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+  }
